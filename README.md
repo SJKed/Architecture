@@ -1,24 +1,24 @@
-#Different kinds of logic
+# Different kinds of logic
 * Business Logic
 * Application Logic
 * User Interface Logic
 
-#Patterns of Design
+# Patterns of Design
 * MVC - Model View Controller
 * MVP - Model View Presenter
 * MVVM - Model View ViewModel
 
-#MVC, Model View Controller
+# MVC, Model View Controller
 * Model - The data layer, Databases, SQL, CRUD, validation, etc.
 * View - The presentation layer, HTML, CSS, EJS, Vue, JSON, etc.
 * Controller - The business logic layer connecting the View and the Model, Parsing Requests, building responses, etc.
 
-#Separation of concern
+# Separation of concern
 * Understand where the problem resides.
 * Separate the problem into smaller, more manageable problems.
 * Scalibility. 
 
-#MVC in express - The Model
+# MVC in express - The Model
 * Abstract all database logic into models.
 * Create sequelize models for the tables 
 * Fat model skinny controller
@@ -49,7 +49,7 @@ The intent is to make the models as fat as possible while instilling all the pot
 
 
 
-#Tool - Sequelize CLI
+# Tool - Sequelize CLI
 * Sequelize CLI - A command line interface for Sequelize.
 * A tool to help setup files and directory structure for Sequelize.
 ```
