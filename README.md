@@ -93,3 +93,25 @@ Using the command:
 npx sequelize-cli db:migrate
 ```
 This will run the migration file and create the table in the database.
+
+# The Controller
+The controller is the glue between the model and the view. The controller calls the functions in the model and passes the data. 
+The controller also operates eventual error handeling. If the operation was successful, send an apporpriate response, otherwsie send and error message.
+Example of a controller before MVC:
+```
+app.get('/', (req, res) => {
+    res.send('Hello World')
+})
+```
+With MVC controllers, it is instead better practise to abstract these calls into functions in separate modules, for example in a folder we name "controllers". And in these functions, use the functions in the models as supplied. 
+```
+| app.js | UserController.js |
+| ----------- | ----------- |
+| ```app.post('/register', UserController.register);``` | ```function createUser(req, res) {
+    //..
+    res.json({message: "User Created"});
+}
+
+module.exports = {
+    createUser
+}  |
