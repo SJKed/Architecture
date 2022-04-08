@@ -1,0 +1,27 @@
+{
+  "name": "architecture",
+  "version": "1.0.0",
+  "description": "* Business Logic * Application Logic * User Interface Logic",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/SJKed/Architecture.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/SJKed/Architecture/issues"
+  },
+  "homepage": "https://github.com/SJKed/Architecture#readme",
+  "devDependencies": {
+    "sequelize": "^6.18.0",
+    "sequelize-cli": "^6.4.1"
+  },
+  "dependencies": {
+    "sqlite3": "^5.0.2"
+  }
+}
