@@ -104,6 +104,23 @@ app.get('/', (req, res) => {
 })
 ```
 With MVC controllers, it is instead better practise to abstract these calls into functions in separate modules, for example in a folder we name "controllers". And in these functions, use the functions in the models as supplied. 
-| app.js | UserController.js |
-| ----------- | ----------- |
-| ```app.post('/register', UserController.register);``` | ```function createUser(req, res) {//logic goes here.. res.json({message: "User Created"});} module.exports = {createUser}```  |
+App.js: 
+```
+const express = require('express');
+
+const app = express();
+
+app.post('/register', UserController.register);
+```
+
+controllers/UserController.js:
+```
+function createUser(req, res) {
+    //..
+    res.json({message: "User Created"});
+}
+
+module.exports = {
+    createUser
+}
+```
